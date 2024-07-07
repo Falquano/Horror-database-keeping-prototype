@@ -13,7 +13,7 @@
     <body>
         <div id="container">
             <h1>INCIDENT REPORT WORKSTATION</h1>
-            <div id="tabselector">
+            <div class="tabselector">
                 <button class="tablinks" onclick="open_tab(event, 'IRT')" id="irt_tab">Incident Report Tool</button>
                 <button class="tablinks" onclick="open_tab(event, 'VWD')">Victims and Witnesses Database</button>
             </div>
@@ -23,22 +23,30 @@
               </div>
               
             <div id="VWD" class="tabcontent">
-                <label for="vwd_name_search">Name : </label>
-                <input type="text" id="vwd_name_search" name="vwd_name_search">
-                
-                <label for="vwd_lname_search">Last name : </label>
-                <input type="text" id="vwd_lname_search" name="vwd_lname_search">
+                <div id="VWDsubtabselector" class="tabselector">
+                    <button class="subtablinks" onclick="open_sub_tab('vwd', event, 'VWD_search')">Person search</button>
+                    <button class="subtablinks" onclick="open_sub_tab('vwd', event, 'VWD_look')">Detail</button>
+                </div>
+                <div id="VWD_search" class="subtabcontent">
+                    <label for="vwd_name_search">Name : </label>
+                    <input type="text" id="vwd_name_search" name="vwd_name_search">
+                    
+                    <label for="vwd_lname_search">Last name : </label>
+                    <input type="text" id="vwd_lname_search" name="vwd_lname_search">
 
-                <label for="vwd_gender_search">Gender : </label>
-                <select name="vwd_gender_search" id="vwd_gender_search">
-                    <option value="any" selected>Any/Unknown</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="Non-binary">Non-binary</option>
-                </select>
-
+                    <label for="vwd_gender_search">Gender : </label>
+                    <select name="vwd_gender_search" id="vwd_gender_search">
+                        <option value="any" selected>Any/Unknown</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="Non-binary">Non-binary</option>
+                    </select>
                 <br/>
                 <button>Search</button>
+                </div>
+                <div id="VWD_look" class="subtabcontent">
+                    <h3>DÉTAILS SUR UN TYPE</h3>
+                </div>
             </div>
         </div>
         <script src="game.js"></script>

@@ -17,13 +17,13 @@ button,form,label,input,select {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#tabselector {
+.tabselector {
     overflow: hidden;
     border: 1px solid #888;
     background: #f0f0f0;
 }
 
-#tabselector button {
+.tabselector button {
     background-color: inherit;
     float: left;
     border: 1px solid black;
@@ -33,17 +33,22 @@ button,form,label,input,select {
     transition: .2s;
 }
 
-.tabcontent {
+.tabcontent, .subtabcontent {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
 }
 
-#tabselector button:hover {
+.tabselector button:hover {
     background-color: #ddd;
 }
 
-#tabselector button.active {
+.tabselector button.active {
     background-color: #ccc;
+}
+
+#VWD {
+    margin: 0px;
+    padding: 0px;
 }
