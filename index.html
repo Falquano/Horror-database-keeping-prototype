@@ -16,6 +16,7 @@
             <div class="tabselector">
                 <button class="tablinks" onclick="open_tab(event, 'IRT')" id="irt_tab">Incident Report Tool</button>
                 <button class="tablinks" onclick="open_tab(event, 'VWD')">Victims and Witnesses Database</button>
+                <button class="tablinks" onclick="open_tab(event, 'POL')">Police Reports</button>
             </div>
 
             <div id="IRT" class="tabcontent">
@@ -47,6 +48,12 @@
                 <div id="VWD_look" class="subtabcontent">
                     <h3>DÉTAILS SUR UN TYPE</h3>
                 </div>
+            </div>
+
+            <div id="POL" class="tabcontent">
+                <label for="pol_case_id">Case ID</label>
+                <input type="text" id="pol_case_id" name="pol_case_id" maxlength="12">
+                <button>Search</button>
             </div>
         </div>
         <script src="game.js"></script>
