@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Magnus Prototype</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="incidents.js"></script>
+        <script src="places.js"></script>
+        <script src="person.js"></script>
+        <script src="entities.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>INCIDENT REPORT WORKSTATION</h1>
+            <div id="tabselector">
+                <button class="tablinks" onclick="open_tab(event, 'IRT')" id="irt_tab">Incident Report Tool</button>
+                <button class="tablinks" onclick="open_tab(event, 'VWD')">Victims and Witnesses Database</button>
+            </div>
+
+            <div id="IRT" class="tabcontent">
+                <p>TO BE USED ONLY BY AUTHORISED PERSONNEL !</p>
+              </div>
+              
+            <div id="VWD" class="tabcontent">
+                <label for="vwd_name_search">Name : </label>
+                <input type="text" id="vwd_name_search" name="vwd_name_search">
+                
+                <label for="vwd_lname_search">Last name : </label>
+                <input type="text" id="vwd_lname_search" name="vwd_lname_search">
+
+                <label for="vwd_gender_search">Gender : </label>
+                <select name="vwd_gender_search" id="vwd_gender_search">
+                    <option value="any" selected>Any/Unknown</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="Non-binary">Non-binary</option>
+                </select>
+
+                <br/>
+                <button>Search</button>
+            </div>
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>

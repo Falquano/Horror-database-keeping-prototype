@@ -1,0 +1,49 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#container {
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+button,form,label,input,select {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#tabselector {
+    overflow: hidden;
+    border: 1px solid #888;
+    background: #f0f0f0;
+}
+
+#tabselector button {
+    background-color: inherit;
+    float: left;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: .2s;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+#tabselector button:hover {
+    background-color: #ddd;
+}
+
+#tabselector button.active {
+    background-color: #ccc;
+}
